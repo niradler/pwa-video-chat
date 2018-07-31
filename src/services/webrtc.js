@@ -1,5 +1,5 @@
-import {withRef} from './db';
-const db = withRef('/video-session');
+import db from './db';
+// const db = withRef('/video-session');
  /*
  https://github.com/WebsiteBeaver/simple-webrtc-video-chat-using-firebase
  */

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import WebRTC from './services/webrtc';
-import {withRef} from './services/db';
+import db from './services/db';
 import {servers} from './config';
-const db = withRef('/video-session');
+// const db = withRef('/video-session');
 class App extends Component {
   componentDidMount(){
     
@@ -23,7 +23,7 @@ class App extends Component {
             <video id="yourVideo" autoPlay muted playsInline></video>
             </div>
             <div className="tile is-parent">
-            <video id="friendsVideo" autoPlay muted playsInline></video>
+            <video id="friendsVideo" autoPlay playsInline></video>
             </div>
           </div>
 
